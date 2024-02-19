@@ -25,7 +25,6 @@ $matches = [[
 ],
 ];
 
-var_dump($matches);
 ?>
 
 <!DOCTYPE html>
