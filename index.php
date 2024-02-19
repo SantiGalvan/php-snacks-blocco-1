@@ -83,15 +83,15 @@ $matches = [[
             <form action="script.php" method="get">
                 <div class="mb-3">
                     <label for="input-name" class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="input-name" placeholder="Nome">
+                    <input type="text" class="form-control" id="input-name" name="name" placeholder="Nome">
                 </div>
                 <div class="mb-3">
                     <label for="input-email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="input-email" placeholder="email">
+                    <input type="email" class="form-control" id="input-email" name="email" placeholder="email">
                 </div>
                 <div class="mb-3">
                     <label for="input-number" class="form-label">Età</label>
-                    <input type="number" class="form-control" id="input-number" placeholder="name@example.com">
+                    <input type="number" class="form-control" id="input-number" name="age" placeholder="name@example.com">
                 </div>
                 <button class="btn btn-primary">Invia</button>
             </form>
