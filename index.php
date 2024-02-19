@@ -22,7 +22,7 @@ $matches = [[
     'away_team' => 'Virtus Roma',
     'home_points' => rand(40,100),
     'away_points' => rand(40,100),
-],
+]
 ];
 
 ?>
@@ -56,7 +56,25 @@ $matches = [[
     <main>
 
     <!-- Section Basket Matches -->
-    <section id="basket-matches"></section>
+    <section id="basket-matches" class="my-5">
+        <div class="container">
+            <h1 class="text-center text-uppercase mb-4">Basket Matches</h1>
+            <div class="card-container">
+                <?php foreach ($matches as $match) : ?>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="text-center">Match</h3>
+                        </div>
+                        <div class="card-body">
+                            <?php foreach($match as $team) : ?>
+                                <h5 class="card-title"><?= $team ?></h5>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </section>
     </main>
 </body>
 </html>
