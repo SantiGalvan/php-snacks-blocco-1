@@ -77,7 +77,26 @@ $matches = [[
     </section>
 
     <!-- Section Form -->
-    <section id="form"></section>
+    <section id="form">
+        <div class="container">
+            <h1 class="text-center text-uppercase mb-4">Form</h1>
+            <form action="" method="get">
+                <div class="mb-3">
+                    <label for="input-name" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="input-name" placeholder="Nome">
+                </div>
+                <div class="mb-3">
+                    <label for="input-email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="input-email" placeholder="email">
+                </div>
+                <div class="mb-3">
+                    <label for="input-number" class="form-label">Età</label>
+                    <input type="number" class="form-control" id="input-number" placeholder="name@example.com">
+                </div>
+                <button class="btn btn-primary">Invia</button>
+            </form>
+        </div>
+    </section>
     </main>
 </body>
 </html>
