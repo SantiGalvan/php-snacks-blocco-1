@@ -80,13 +80,13 @@ $matches = [[
     <section id="form">
         <div class="container">
             <h1 class="text-center text-uppercase mb-4">Form</h1>
-            <form action="" method="get">
+            <form action="script.php" method="get">
                 <div class="mb-3">
                     <label for="input-name" class="form-label">Nome</label>
                     <input type="text" class="form-control" id="input-name" placeholder="Nome">
                 </div>
                 <div class="mb-3">
-                    <label for="input-email" class="form-label">Email address</label>
+                    <label for="input-email" class="form-label">Email</label>
                     <input type="email" class="form-control" id="input-email" placeholder="email">
                 </div>
                 <div class="mb-3">
