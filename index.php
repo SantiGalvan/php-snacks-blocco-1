@@ -27,3 +27,19 @@ $matches = [[
 
 var_dump($matches);
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket Matches | Form</title>
+</head>
+<body>
+    <main>
+
+    <!-- Section Basket Matches -->
+    <section id="basket-matches"></section>
+    </main>
+</body>
+</html>
