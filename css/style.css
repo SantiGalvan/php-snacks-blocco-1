@@ -8,6 +8,7 @@
 /* Generics */
 body {
     font-family: "Anta", sans-serif;
+    background-color: rgba(83, 83, 84, 0.56);
 }
 
 h3,
@@ -27,4 +28,9 @@ h5 {
 .card-body {
     display: flex;
     gap: 10px;
+}
+
+/* Section Form */
+.form-label {
+    font-size: 20px;
 }
