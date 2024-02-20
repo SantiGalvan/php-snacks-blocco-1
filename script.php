@@ -1,9 +1,14 @@
 <?php
-if (!count($_GET)) {
-    echo 'Nulla da mostrare';
-    die();
-}
+$name = $_GET['name'] ?? '';
+$email = $_GET['email'] ?? '';
+$age = $_GET['age'] ?? '';
 
+$is_name_valid = mb_strlen(trim($name));
+$is_email_valid = str_contains($email, '@') && str_contains($email, '.');
+$is_age_valid = is_numeric($age) && $age > 0;
+$is_form_invalid = !$is_name_valid || !$is_email_valid || !$is_age_valid;
+
+$message = $is_form_invalid ? 'Acesso Negato' : 'Acesso Riuscito';
 
 ?>
 
@@ -39,6 +44,7 @@ if (!count($_GET)) {
         <section id="result" class="my-5">
             <div class="container">
                 <h1 class="text-center text-uppercase">Risultato del form</h1>
+                <p class="text-center"><?= $message ?></p>
             </div>
         </section>
     </main>
