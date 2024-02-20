@@ -66,9 +66,7 @@ $matches = [[
                             <h3 class="text-center">Match</h3>
                         </div>
                         <div class="card-body">
-                            <?php foreach($match as $team) : ?>
-                                <h5 class="card-title"><?= $team ?></h5>
-                            <?php endforeach; ?>
+                            <h5 class="card-title"><?= $match['home_team'] ?> - <?= $match['away_team'] ?> | <?= $match['home_points'] ?> - <?= $match['away_points'] ?></h5>
                         </div>
                     </div>
                 <?php endforeach; ?>
